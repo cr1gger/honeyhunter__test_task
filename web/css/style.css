@@ -1,0 +1,106 @@
+label {
+  color: #D7D7D7;
+}
+
+.required-field:after {
+  content: " *";
+  color: red;
+}
+
+textarea {
+  resize: none;
+}
+
+.custom-input {
+  background: transparent;
+  color: white;
+  height: calc(2.5em + .75rem + 2px);
+}
+
+.custom-input:active, .custom-input:focus {
+  border-color: #BE393B;
+  background: #2F3338;
+  box-shadow: none;
+  color: white;
+}
+
+.custom-btn {
+  background: #BE393B;
+}
+
+.dark-section {
+  background: #2D3136;
+}
+
+.white-section {
+  background: white;
+}
+
+.white-section, .dark-section {
+  padding: 26px;
+}
+
+.top-logo img {
+  max-width: 300px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.contact-image {
+  text-align: center;
+}
+.contact-image img {
+  max-width: 150px;
+}
+
+.comment-container {
+  flex: 1 1 auto;
+  margin: 10px 10px;
+  font-weight: 600;
+  min-height: 220px;
+  background: #E9EEF3;
+  color: #6D737B;
+  padding: 0;
+}
+.comment-container .comment-header {
+  color: white;
+  background: #4B596C;
+  text-align: center;
+  padding: 10px;
+}
+.comment-container .comment-body {
+  padding: 20px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.comment-container:nth-child(2n) .comment-body p:first-child {
+  color: #58AD52;
+}
+.comment-container:nth-child(2n) .comment-header {
+  background: #58AD52;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #37414E;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+.social img {
+  text-align: center;
+}
+.social img.fb {
+  width: 15px;
+}
+.social img.vk {
+  width: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

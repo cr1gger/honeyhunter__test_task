@@ -1,0 +1,111 @@
+$colorRed: #BE393B;
+$colorHeaderOne: #4B596C;
+$colorHeaderTwo: #58AD52;
+$colorCommentBody: #E9EEF3;
+$colorCommentText: #6D737B;
+
+label {
+  color: #D7D7D7;
+}
+.required-field{
+  &:after {
+    content: " *";
+    color: red;
+  }
+}
+textarea{
+  resize: none;
+}
+.custom-input{
+  background: transparent;
+  color: white;
+  height: calc(2.5em + .75rem + 2px);
+}
+.custom-input:active, .custom-input:focus{
+  border-color:$colorRed;
+  background: #2F3338;
+  box-shadow: none;
+  color: white;
+}
+.custom-btn{
+  background: $colorRed;
+}
+
+.dark-section{
+  background: #2D3136;
+}
+.white-section{
+  background: white;
+}
+.white-section, .dark-section{
+  padding: 26px;
+}
+.top-logo{
+  img{
+    max-width: 300px;
+  }
+}
+.footer-logo{
+  img{
+    max-width: 150px;
+  }
+}
+.contact-image {
+  text-align: center;
+  img{
+    max-width: 150px;
+  }
+}
+
+.comment-container{
+  flex: 1 1 auto;
+  margin:10px 10px;
+  font-weight: 600;
+  min-height:220px;
+  background: $colorCommentBody;
+  color: $colorCommentText;
+  padding:0;
+
+  .comment-header{
+    color: white;
+    background: $colorHeaderOne;
+    text-align: center;
+    padding: 10px;
+  }
+  .comment-body{
+    padding: 20px;
+    text-align: center;
+    word-break: break-all;
+  }
+}
+
+.comment-container:nth-child(2n)
+{
+  .comment-body{
+    p:first-child{
+      color: $colorHeaderTwo;
+    }
+  }
+  .comment-header{
+    background: $colorHeaderTwo;
+  }
+}
+.social{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #37414E;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  img{
+    text-align: center;
+  }
+  img.fb{
+    width: 15px;
+  }
+  img.vk{
+    width: 35px;
+  }
+}
